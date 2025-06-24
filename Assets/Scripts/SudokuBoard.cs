@@ -12,7 +12,7 @@ public class SudokuBoard : MonoBehaviour
         float screenWidthWorldUnits = 2f * Camera.main.orthographicSize * Camera.main.aspect;
         float worldUnitsPerPixel = screenWidthWorldUnits / screenPixelWidth;
 
-        float gap = 4f * worldUnitsPerPixel;      // gap between cells = 4px
+        float gap = 0f * worldUnitsPerPixel;      // gap between cells = 4px
         float padding = 12f * worldUnitsPerPixel; // board padding = 6px per side
 
         float usableWidth = screenWidthWorldUnits - (padding * 2f);
