@@ -1,10 +1,16 @@
 using TMPro;
 using UnityEngine;
 
+[RequireComponent(typeof(TextMeshPro))]
 public class SudokuCell : MonoBehaviour
 {
     public int Value;
-    public TextMeshPro textDisplay;
+    private TextMeshPro textDisplay;
+
+    void Awake()
+    {
+        textDisplay = GetComponentInChildren<TextMeshPro>();
+    }
 
     public void SetValue(int val)
     {
