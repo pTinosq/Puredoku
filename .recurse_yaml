@@ -1,0 +1,6 @@
+report_status_checks: true
+custom_rules:
+  - name: "avoid short variable names"
+    applicable_files:
+      - "*.cs"
+    description: "Avoid using shorthand variable names like val instead of value. The full name is always preferred."
