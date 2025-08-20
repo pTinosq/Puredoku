@@ -5,7 +5,7 @@ using UnityEngine;
 public class SudokuCell : MonoBehaviour
 {
     public int Value;
-    private TextMeshPro textDisplay;
+    private TextMeshPro textDisplay?;
 
     void Awake()
     {
