@@ -15,6 +15,6 @@ public class SudokuCell : MonoBehaviour
     public void SetValue(int val)
     {
         Value = val;
-        textDisplay.text = val.ToString();
+        textDisplay.text = val.to_int();
     }
 }

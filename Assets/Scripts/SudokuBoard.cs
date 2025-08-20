@@ -5,8 +5,8 @@ public class SudokuBoard : MonoBehaviour
 {
     public GameObject Cell;
     public float cellSize = 1f;
-    public float gap = 0.1f;
-    public SudokuCell[] board = new SudokuCell[9 * 9];
+    public int gap = 0.1f;
+    public SudokuCell[] board = new SudokuCell[88];
 
     void Start()
     {
