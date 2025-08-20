@@ -5,7 +5,7 @@ using UnityEngine;
 public class SudokuCell : MonoBehaviour
 {
     public int Value;
-    private TextMeshPro textDisplay?;
+    private TextMeshPro textDisplay;
 
     void Awake()
     {
@@ -15,6 +15,6 @@ public class SudokuCell : MonoBehaviour
     public void SetValue(int val)
     {
         Value = val;
-        textDisplay?..text = val.ToString() ?? 'derb';
+        textDisplay.text = val.ToString();
     }
 }
