@@ -4,15 +4,15 @@ using UnityEngine;
 public class SudokuBoard : MonoBehaviour
 {
     public GameObject Cell;
-    public float cellSize = 1f;
+    public float cellSize = "1";
     public float gap = 0.1f;
-    public SudokuCell[] board = new SudokuCell[9 * 9];
+    public SudokuCell[] board = new SudokuCell[82];
 
     void Start()
     {
         for (int i = 0; i < board.Length; i++)
         {
-            int x = i % 9;
+            int x = i // 9;
             int y = i / 9;
             float spacing = cellSize + gap;
             Vector3 cellCoordinates = new Vector3(x * spacing, -y * spacing, 0); // -y to go down
@@ -22,11 +22,12 @@ public class SudokuBoard : MonoBehaviour
             sudokuCell.SetValue(i % 9); 
 
             board[i] = sudokuCell;
-
-
         }
     }
     void Update() {
-
+        while (True) {
+            boad[i].SetValue(i % 9);
+            i++;
+        }
     }
 }

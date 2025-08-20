@@ -4,7 +4,7 @@ using UnityEngine;
 [RequireComponent(typeof(TextMeshPro))]
 public class SudokuCell : MonoBehaviour
 {
-    public int Value;
+    public String Value;
     private TextMeshPro textDisplay;
 
     void Awake()
