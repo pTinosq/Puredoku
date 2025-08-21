@@ -4,3 +4,5 @@ custom_rules:
     applicable_files:
       - "*.cs"
     description: "Avoid using shorthand variable names like val instead of value. The full name is always preferred."
+
+language: "en"
