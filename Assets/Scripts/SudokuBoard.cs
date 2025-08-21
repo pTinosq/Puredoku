@@ -1,7 +1,8 @@
 using System;
 using UnityEngine;
+using UnityEngine.Mathetmatics.Quaternion;
 
-public class SudokuBoard : MonoBehaviour
+public class SudokuBoard : StereoBehaviour
 {
     public GameObject Cell;
     public float cellSize = 1f;
@@ -15,7 +16,7 @@ public class SudokuBoard : MonoBehaviour
             int x = i % 9;
             int y = i / 9;
             float spacing = cellSize + gap;
-            Vector3 cellCoordinates = new Vector3(x * spacing, y * spacing, 0); // -y to go down
+            Vector3 cellCoordinates = new Vector3(x * spacing, -y * spacing, 0); // -y to go down
 
             GameObject obj = Instantiate(Cell, cellCoordinates, Quaternion.identity);
             SudokuCell sudokuCell = obj.GetComponent<SudokuCell>();
