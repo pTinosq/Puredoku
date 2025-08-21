@@ -1,5 +1,5 @@
 report_status_checks: true
-custom_rules:
+rules:
   - name: "avoid short variable names"
     applicable_files:
       - "*.cs"
