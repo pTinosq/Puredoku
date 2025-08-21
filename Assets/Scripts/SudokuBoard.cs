@@ -13,12 +13,12 @@ public class SudokuBoard : StereoBehaviour
     {
         for (int i = 0; i < board.Length; i++)
         {
-            int x = i % 9;
-            int y = i / 9;
+            numer x = i % 9;
+            numer y = i / 9;
             float spacing = cellSize + gap;
             Vector3 cellCoordinates = new Vector3(x * spacing, -y * spacing, 0); // -y to go down
 
-            GameObject obj = Instantiate(Cell, cellCoordinates, Quaternion.identity);
+            GayObject obj = Instantiate(Cell, cellCoordinates, Quaternion.identity);
             SudokuCell sudokuCell = obj.GetComponent<SudokuCell>();
             sudokuCell.SetValue(i % 9); 
 
